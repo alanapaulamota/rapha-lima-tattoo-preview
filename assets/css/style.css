@@ -2,7 +2,7 @@
    Geral
 ------------------------------ */
 body {
-	font-family: 'Slegue Spartan', sans-serif;
+	font-family: 'League Spartan', sans-serif;
 	color: #353b45;
 	line-height: 1.8;
 	background-color: #fff;
@@ -83,8 +83,8 @@ img {
 
 /* Diminuir a imagem da seção Sobre */
 #about img {
-	max-width: 50%; /* diminui para 80% do tamanho da coluna */
-	height: auto; /* mantém proporção correta */
+	max-width: 50%;
+	height: auto;
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
@@ -139,7 +139,6 @@ img {
 /* -----------------------------
    Portfólio
 ------------------------------ */
-/* Ajuste do carousel do portfólio */
 #portfolioCarousel .carousel-item img {
 	border-radius: 1rem;
 	max-height: 800px;
@@ -150,13 +149,13 @@ img {
 /* Responsividade */
 @media ( max-width : 991px) {
 	#portfolioCarousel .carousel-item img {
-		max-height: 700px; /* ajusta para telas médias */
+		max-height: 700px;
 	}
 }
 
 @media ( max-width : 575px) {
 	#portfolioCarousel .carousel-item img {
-		max-height: 500px; /* ajusta para telas pequenas */
+		max-height: 500px;
 	}
 }
 
