@@ -29,7 +29,7 @@
 	rel="stylesheet">
 
 <!-- CSS público -->
-<link rel="stylesheet" href="./assets/css/style.css">
+<link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
@@ -105,7 +105,7 @@
 				<div class="col-lg-4 col-md-6 d-flex">
 					<div class="service-card p-4 shadow rounded text-center flex-fill">
 						<div class="icon-wrapper mb-3">
-							<img src="./assets/img/fineline.png" alt="Fineline">
+							<img src="assets/img/fineline.png" alt="Fineline">
 						</div>
 						<h4>Fineline</h4>
 						<p>Traços delicados e minimalistas, perfeitos para detalhes
@@ -125,7 +125,7 @@
 				<div class="col-lg-4 col-md-6 d-flex">
 					<div class="service-card p-4 shadow rounded text-center flex-fill">
 						<div class="icon-wrapper mb-3">
-							<img src="../assets/img/pata.png" alt="Artes Interpretativas">
+							<img src="assets/img/pata.png" alt="Artes Interpretativas">
 						</div>
 						<h4>Artes Interpretativas</h4>
 						<p>Transforme fotos, memórias ou elementos pessoais em
@@ -265,16 +265,16 @@
 	<script
 		src="https://cdn.jsdelivr.net/npm/isotope-layout@3.0.6/dist/isotope.pkgd.min.js"></script>
 	<script>
-    const lightbox = GLightbox({ selector: '.glightbox' });
-    const iso = new Isotope('.isotope-container', { itemSelector: '.portfolio-item', layoutMode: 'masonry' });
-    const filters = document.querySelectorAll('.portfolio-filters li');
-    filters.forEach(filter => {
-      filter.addEventListener('click', function() {
+const lightbox = GLightbox({ selector: '.glightbox' });
+const iso = new Isotope('.isotope-container', { itemSelector: '.portfolio-item', layoutMode: 'masonry' });
+const filters = document.querySelectorAll('.portfolio-filters li');
+filters.forEach(filter => {
+    filter.addEventListener('click', function() {
         filters.forEach(f => f.classList.remove('filter-active'));
         this.classList.add('filter-active');
         iso.arrange({ filter: this.getAttribute('data-filter') });
-      });
     });
-  </script>
+});
+</script>
 </body>
 </html>
