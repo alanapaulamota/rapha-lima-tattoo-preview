@@ -1,236 +1,143 @@
-/* -----------------------------
-   Geral
------------------------------- */
-body {
-	font-family: 'Slegue Spartan', sans-serif;
-	color: #353b45;
-	line-height: 1.8;
-	background-color: #fff;
+/* =========================
+   GOOGLE FONTS (SEGURAS)
+========================= */
+@import
+	url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Montserrat:wght@300;400;500;600&display=swap')
+	;
+
+/* =========================
+   RESET
+========================= */
+* {
 	margin: 0;
 	padding: 0;
+	box-sizing: border-box;
 }
 
-a {
+body {
+	font-family: 'Montserrat', sans-serif;
+	background-color: #ffffff;
+	color: #333;
+	line-height: 1.6;
+}
+
+/* =========================
+   HEADER / NAVBAR
+========================= */
+header {
+	background-color: #4b2a4f;
+	padding: 15px 0;
+}
+
+.navbar {
+	max-width: 1200px;
+	margin: auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.navbar a {
+	color: #fff;
 	text-decoration: none;
-	color: inherit;
+	margin-left: 20px;
+	font-weight: 500;
 }
 
-img {
-	max-width: 100%;
-	display: block;
+.navbar a:hover {
+	opacity: 0.8;
 }
 
-/* -----------------------------
-   Navbar
------------------------------- */
-.navbar-brand {
-	font-family: 'Pompiere', cursive;
-	font-size: 2rem;
-	color: #fff;
-}
-
-.nav-link {
-	color: #fff;
-	margin-left: 1.5rem;
-	font-weight: 600;
-	transition: 0.3s;
-}
-
-.nav-link:hover {
-	color: #f777e5;
-}
-
-/* -----------------------------
-   Hero
------------------------------- */
+/* =========================
+   HERO
+========================= */
 .hero {
-	position: relative;
-	text-align: center;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-}
-
-.hero h1 {
-	font-family: 'Pompiere', cursive;
-	font-size: 4.5rem;
-	color: #fff;
-	text-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
-}
-
-.hero p {
-	font-size: 1.8rem;
-	color: #fff;
-	margin-bottom: 2rem;
-	text-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
-}
-
-.btn-accent {
-	background-color: #482c44;
-	color: #fff;
-	border-radius: 50px;
-	padding: 1rem 2.5rem;
-	font-weight: 600;
-	transition: 0.3s;
-}
-
-.btn-accent:hover {
-	background-color: #353b45;
-	color: #f777e5;
-	transform: translateY(-4px);
-	box-shadow: 0 10px 20px rgba(247, 119, 229, 0.3);
-}
-
-/* Diminuir a imagem da seção Sobre */
-#about img {
-	max-width: 50%; /* diminui para 80% do tamanho da coluna */
-	height: auto; /* mantém proporção correta */
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-}
-
-/* -----------------------------
-   Serviços
------------------------------- */
-.service-card {
-	background: #fff;
-	border-radius: 1.5rem;
-	padding: 3rem 2rem;
-	box-shadow: 0 8px 25px rgba(72, 44, 68, 0.15);
-	transition: 0.4s;
-	text-align: center;
-}
-
-.service-card:hover {
-	transform: translateY(-10px);
-	box-shadow: 0 15px 35px rgba(72, 44, 68, 0.25);
-}
-
-.service-card h4 {
-	font-family: 'Pompiere', cursive;
-	font-size: 1.8rem;
-	color: #482c44;
-	margin-bottom: 0.8rem;
-}
-
-.service-card p {
-	font-size: 1rem;
-	color: #353b45;
-}
-
-.icon-wrapper {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	margin-bottom: 1rem;
-}
-
-.icon-wrapper img {
-	width: 70px;
-	height: 70px;
-	transition: 0.3s;
-}
-
-.service-card:hover .icon-wrapper img {
-	transform: scale(1.2);
-}
-
-/* -----------------------------
-   Portfólio
------------------------------- */
-/* Ajuste do carousel do portfólio */
-#portfolioCarousel .carousel-item img {
-	border-radius: 1rem;
-	max-height: 800px;
 	width: 100%;
-	object-fit: cover;
+	height: 420px;
+	background-image: url('../img/banner.jpg');
+	background-size: cover;
+	background-position: center;
 }
 
-/* Responsividade */
-@media ( max-width : 991px) {
-	#portfolioCarousel .carousel-item img {
-		max-height: 700px; /* ajusta para telas médias */
-	}
+/* =========================
+   SECTIONS
+========================= */
+section {
+	padding: 80px 20px;
+	max-width: 1200px;
+	margin: auto;
 }
 
-@media ( max-width : 575px) {
-	#portfolioCarousel .carousel-item img {
-		max-height: 500px; /* ajusta para telas pequenas */
-	}
-}
-
-/* -----------------------------
-   Contato
------------------------------- */
-.contact-card {
-	background: #fff;
-	transition: 0.3s;
-	cursor: pointer;
-	border-radius: 1.2rem;
-	padding: 2rem 1rem;
+section h2 {
+	font-family: 'Playfair Display', serif;
+	font-size: 32px;
+	margin-bottom: 10px;
 	text-align: center;
-	box-shadow: 0 6px 18px rgba(72, 44, 68, 0.1);
 }
 
-.contact-card:hover {
-	transform: translateY(-5px);
-	box-shadow: 0 12px 25px rgba(72, 44, 68, 0.2);
+section p {
+	text-align: center;
+	max-width: 700px;
+	margin: 0 auto 40px;
+}
+
+/* =========================
+   CONTATO / CARDS
+========================= */
+.contact-cards {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+	gap: 30px;
+}
+
+.contact-card {
+	background-color: #fff;
+	border-radius: 12px;
+	padding: 30px 20px;
+	text-align: center;
+	box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
 }
 
 .contact-card img {
-	display: block;
-	margin: 0 auto 1rem auto;
-	width: 50px;
-	height: 50px;
-	filter: invert(21%) sepia(36%) saturate(1801%) hue-rotate(277deg)
-		brightness(50%) contrast(91%);
+	width: 48px;
+	height: 48px;
+	margin-bottom: 15px;
 }
 
-.contact-card span {
-	display: block;
-	font-size: 1.1rem;
-	color: #482c44;
+.contact-card h3 {
+	margin-bottom: 8px;
 	font-weight: 600;
-	margin-bottom: 0.3rem;
 }
 
-.contact-info {
-	font-size: 1rem;
-	color: #353b45;
+.contact-card a {
+	color: #4b2a4f;
+	text-decoration: none;
+	font-weight: 500;
 }
 
-/* -----------------------------
-   Footer
------------------------------- */
+/* =========================
+   PORTFÓLIO
+========================= */
+.portfolio-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	gap: 20px;
+}
+
+.portfolio-grid img {
+	width: 100%;
+	height: 280px;
+	object-fit: cover;
+	border-radius: 10px;
+}
+
+/* =========================
+   FOOTER
+========================= */
 footer {
-	font-size: 0.9rem;
-}
-
-/* -----------------------------
-   Responsividade
------------------------------- */
-@media ( max-width : 991px) {
-	.hero h1 {
-		font-size: 3.5rem;
-	}
-	.hero p {
-		font-size: 1.4rem;
-	}
-}
-
-@media ( max-width : 575px) {
-	.hero h1 {
-		font-size: 2.5rem;
-	}
-	.hero p {
-		font-size: 1.1rem;
-	}
-	.service-card {
-		padding: 2rem 1rem;
-	}
-	.btn-accent {
-		padding: 0.8rem 2rem;
-		font-size: 0.95rem;
-	}
+	background-color: #4b2a4f;
+	color: #fff;
+	text-align: center;
+	padding: 20px;
+	font-size: 14px;
 }
