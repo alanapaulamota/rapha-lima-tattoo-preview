@@ -5,9 +5,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Rapha Lima Tattoo</title>
 
-<!-- Base URL para GitHub Pages -->
-<base href="/rapha-lima-tattoo-preview/">
-
 <!-- Favicon -->
 <link rel="icon" type="image/jpeg" sizes="32x32"
 	href="assets/img/favicon.jpeg">
@@ -54,7 +51,7 @@
 					<li class="nav-item"><a class="nav-link" href="#portfolio">Portfólio</a></li>
 					<li class="nav-item"><a class="nav-link" href="#contact">Contato</a></li>
 					<!-- Botão para o admin -->
-					<li class="nav-item ms-2"><a href="admin/dashboard.html"
+					<li class="nav-item ms-2"><a href="admin/index.html"
 						class="btn btn-outline-light">Admin</a></li>
 				</ul>
 			</div>
@@ -268,16 +265,16 @@
 	<script
 		src="https://cdn.jsdelivr.net/npm/isotope-layout@3.0.6/dist/isotope.pkgd.min.js"></script>
 	<script>
-  const lightbox = GLightbox({ selector: '.glightbox' });
-  const iso = new Isotope('.isotope-container', { itemSelector: '.portfolio-item', layoutMode: 'masonry' });
-  const filters = document.querySelectorAll('.portfolio-filters li');
-  filters.forEach(filter => {
-    filter.addEventListener('click', function() {
-      filters.forEach(f => f.classList.remove('filter-active'));
-      this.classList.add('filter-active');
-      iso.arrange({ filter: this.getAttribute('data-filter') });
+    const lightbox = GLightbox({ selector: '.glightbox' });
+    const iso = new Isotope('.isotope-container', { itemSelector: '.portfolio-item', layoutMode: 'masonry' });
+    const filters = document.querySelectorAll('.portfolio-filters li');
+    filters.forEach(filter => {
+      filter.addEventListener('click', function() {
+        filters.forEach(f => f.classList.remove('filter-active'));
+        this.classList.add('filter-active');
+        iso.arrange({ filter: this.getAttribute('data-filter') });
+      });
     });
-  });
-</script>
+  </script>
 </body>
 </html>
