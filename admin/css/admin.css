@@ -1,0 +1,166 @@
+/* ============================= */
+/* Reset e Body */
+/* ============================= */
+body {
+	margin: 0;
+	font-family: 'Slegue Spartan', sans-serif;
+	background-color: #f8f9fa;
+	color: #353b45;
+	transition: background 0.3s, color 0.3s;
+}
+
+/* ============================= */
+/* Cabeçalhos */
+/* ============================= */
+h1, .content-header h1 {
+	font-family: 'Pompiere', cursive;
+	color: #482c44;
+	margin-bottom: 1.5rem;
+}
+
+/* ============================= */
+/* Botões */
+/* ============================= */
+.btn, .btn-accent {
+	font-weight: 600;
+	border-radius: 50px;
+	transition: all 0.3s;
+}
+
+.btn-primary, .btn-accent {
+	background-color: #482c44;
+	color: #fff;
+	border: none;
+}
+
+.btn-primary:hover, .btn-accent:hover {
+	background-color: #353b45;
+	color: #f777e5;
+}
+
+.btn-danger {
+	background-color: #c0392b;
+	color: #fff;
+	border: none;
+}
+
+.btn-danger:hover {
+	background-color: #a93226;
+}
+
+/* ============================= */
+/* Inputs de pesquisa */
+/* ============================= */
+#search {
+	max-width: 400px;
+	padding: 8px 12px;
+	border-radius: 8px;
+	border: 1px solid #ccc;
+	transition: 0.3s;
+}
+
+#search:focus {
+	outline: none;
+	border-color: #482c44;
+	box-shadow: 0 0 5px rgba(72, 44, 68, 0.3);
+}
+
+/* ============================= */
+/* Tabela Geral */
+/* ============================= */
+.table-card {
+	background-color: #fff;
+	padding: 1.5rem;
+	border-radius: 1.5rem;
+	box-shadow: 0 10px 25px rgba(72, 44, 68, 0.12);
+}
+
+.table {
+	width: 100%;
+	border-collapse: separate;
+	border-spacing: 0;
+	border-radius: 1rem;
+	overflow: hidden;
+}
+
+.table thead {
+	background-color: #f777e5;
+	color: #fff;
+	font-weight: 600;
+}
+
+.table tbody tr:nth-of-type(odd) {
+	background-color: #ffe6f7;
+}
+
+.table tbody tr:nth-of-type(even) {
+	background-color: #fff;
+}
+
+.table tbody tr:hover {
+	background-color: #f7c0eb;
+}
+
+.table th, .table td {
+	padding: 0.75rem 1rem;
+	vertical-align: middle;
+	text-align: left;
+}
+
+/* ============================= */
+/* Status colorido (clientes/agendamentos) */
+/* ============================= */
+.status-confirmado {
+	color: #482c44;
+	font-weight: 600;
+}
+
+.status-pendente {
+	color: #f777e5;
+	font-weight: 600;
+}
+
+.status-cancelado {
+	color: #c0392b;
+	font-weight: 600;
+}
+
+/* ============================= */
+/* Dark Mode */
+/* ============================= */
+body.dark-mode {
+	background-color: #1c1c1e;
+	color: #fff;
+}
+
+body.dark-mode .table-card {
+	background-color: #2c2c2e;
+	box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+}
+
+body.dark-mode .table thead {
+	background-color: #482c44;
+	color: #fff;
+}
+
+body.dark-mode .table tbody tr:nth-of-type(odd) {
+	background-color: #2c2c2e;
+}
+
+body.dark-mode .table tbody tr:nth-of-type(even) {
+	background-color: #383838;
+}
+
+body.dark-mode .table tbody tr:hover {
+	background-color: #484848;
+}
+
+/* ============================= */
+/* Responsivo */
+/* ============================= */
+@media ( max-width : 576px) {
+	#search, .btn, .btn-accent {
+		width: 100%;
+		margin-bottom: 10px;
+	}
+}

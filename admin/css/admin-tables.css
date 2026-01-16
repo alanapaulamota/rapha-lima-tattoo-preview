@@ -1,0 +1,126 @@
+body {
+	font-family: 'Slegue Spartan', sans-serif;
+	background-color: #f8f9fa;
+	color: #353b45;
+	margin: 0;
+	padding: 0;
+	transition: background 0.3s, color 0.3s;
+}
+
+.container h1 {
+	font-family: 'Pompiere', cursive;
+	color: #482c44;
+	margin-bottom: 20px;
+}
+
+/* Inputs de pesquisa */
+#search {
+	max-width: 400px;
+	padding: 8px 12px;
+	border-radius: 8px;
+	border: 1px solid #ccc;
+	transition: 0.3s;
+}
+
+#search:focus {
+	outline: none;
+	border-color: #482c44;
+	box-shadow: 0 0 5px rgba(72, 44, 68, 0.3);
+}
+
+/* Botões */
+.btn {
+	font-weight: 600;
+	border-radius: 50px;
+	transition: 0.3s;
+}
+
+.btn-primary {
+	background-color: #482c44;
+	border: none;
+}
+
+.btn-primary:hover {
+	background-color: #353b45;
+	color: #fff;
+}
+
+.btn-danger {
+	background-color: #c0392b;
+	border: none;
+}
+
+.btn-danger:hover {
+	background-color: #a93226;
+}
+
+/* Tabela */
+#appointments-table {
+	border-radius: 1rem;
+	overflow: hidden;
+	box-shadow: 0 8px 20px rgba(72, 44, 68, 0.1);
+}
+
+/* Cabeçalho rosa */
+#appointments-table thead {
+	background-color: #f777e5;
+	color: #fff;
+	font-weight: 600;
+}
+
+/* Linhas alternadas */
+#appointments-table tbody tr:nth-of-type(odd) {
+	background-color: #ffe6f7;
+}
+
+#appointments-table tbody tr:nth-of-type(even) {
+	background-color: #fff;
+}
+
+/* Hover rosa */
+#appointments-table tbody tr:hover {
+	background-color: #f7c0eb;
+}
+
+/* Status */
+#appointments-table tbody td:nth-child(5) {
+	font-weight: 600;
+}
+
+/* Responsividade da tabela */
+.table-responsive {
+	overflow-x: auto;
+}
+
+/* Dark Mode */
+body.dark-mode {
+	background-color: #1c1c1e;
+	color: #fff;
+}
+
+body.dark-mode #appointments-table thead {
+	background-color: #482c44;
+}
+
+body.dark-mode #appointments-table tbody tr:nth-of-type(odd) {
+	background-color: #2c2c2e;
+}
+
+body.dark-mode #appointments-table tbody tr:nth-of-type(even) {
+	background-color: #383838;
+}
+
+body.dark-mode #appointments-table tbody tr:hover {
+	background-color: #484848;
+}
+
+/* Mobile adjustments */
+@media ( max-width : 576px) {
+	#search {
+		width: 100%;
+	}
+	.btn {
+		width: 100%;
+		margin-bottom: 10px;
+	}
+}
