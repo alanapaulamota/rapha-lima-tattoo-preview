@@ -6,10 +6,9 @@
 <title>Dashboard Admin - Rapha Lima Tattoo</title>
 
 <link rel="icon" type="image/jpeg" sizes="32x32"
-	href="/assets/img/favicon.jpeg">
+	href="../assets/img/favicon.jpeg">
 <link rel="icon" type="image/jpeg" sizes="16x16"
-	href="/assets/img/favicon.jpeg">
-
+	href="../assets/img/favicon.jpeg">
 
 <!-- Bootstrap -->
 <link
@@ -18,7 +17,7 @@
 
 <!-- Google Fonts -->
 <link
-	href="https://fonts.googleapis.com/css2?family=Pompiere&family=Slegue+Spartan:wght@400;600&display=swap"
+	href="https://fonts.googleapis.com/css2?family=Pompiere&family=League+Spartan:wght@400;600&display=swap"
 	rel="stylesheet">
 
 <!-- Bootstrap Icons -->
@@ -30,23 +29,23 @@
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
 <!-- CSS Customizado -->
-<link rel="stylesheet" href="../admin/css/dashboard.css">
+<link rel="stylesheet" href="css/dashboard.css">
 </head>
 <body>
 
 	<!-- Sidebar -->
 	<div class="sidebar">
 		<h2>Admin</h2>
-		<a href="#" class="active" data-section="dashboard"><i
-			class="bi bi-speedometer2"></i> Dashboard</a> <a href="appointments.html"><i
-			class="bi bi-calendar-check"></i> Agendamentos</a> <a href="clients.html"><i
-			class="bi bi-people"></i> Clientes</a> <a href="payments.html"><i
-			class="bi bi-cash-stack"></i> Pagamentos</a> <a href="tattoos.html"><i
+		<a href="index.html" class="active" data-section="dashboard"><i
+			class="bi bi-speedometer2"></i> Dashboard</a> <a
+			href="pages/appointments.html"><i class="bi bi-calendar-check"></i>
+			Agendamentos</a> <a href="pages/clients.html"><i class="bi bi-people"></i>
+			Clientes</a> <a href="pages/payments.html"><i
+			class="bi bi-cash-stack"></i> Pagamentos</a> <a href="pages/tattoos.html"><i
 			class="bi bi-pencil-square"></i> Tatuagens</a> <a href="#"
 			id="toggle-dark-mode"><i class="bi bi-moon"></i> Modo Escuro</a> <a
-			href="/index.html"><i class="bi bi-box-arrow-right"></i> Sair</a>
+			href="../index.html"><i class="bi bi-box-arrow-right"></i> Sair</a>
 	</div>
-
 
 	<!-- Main -->
 	<div class="main">
@@ -79,25 +78,25 @@
 					<i class="bi bi-calendar-check"></i>
 					<h3>Agendamentos</h3>
 					<p>Agendamentos totais</p>
-					<button onclick="window.location.href='appointments.html'">Gerenciar</button>
+					<button onclick="window.location.href='pages/appointments.html'">Gerenciar</button>
 				</div>
 				<div class="card" draggable="true">
 					<i class="bi bi-people"></i>
 					<h3>Clientes</h3>
 					<p>Total de clientes</p>
-					<button onclick="window.location.href='clients.html'">Gerenciar</button>
+					<button onclick="window.location.href='pages/clients.html'">Gerenciar</button>
 				</div>
 				<div class="card" draggable="true">
 					<i class="bi bi-cash-stack"></i>
 					<h3>Pagamentos</h3>
 					<p>Pagamentos recebidos</p>
-					<button onclick="window.location.href='payments.html'">Gerenciar</button>
+					<button onclick="window.location.href='pages/payments.html'">Gerenciar</button>
 				</div>
 				<div class="card" draggable="true">
 					<i class="bi bi-pencil-square"></i>
 					<h3>Tatuagens</h3>
 					<p>Tatuagens cadastradas</p>
-					<button onclick="window.location.href='tattoos.html'">Gerenciar</button>
+					<button onclick="window.location.href='pages/tattoos.html'">Gerenciar</button>
 				</div>
 			</div>
 
